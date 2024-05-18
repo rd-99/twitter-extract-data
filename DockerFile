@@ -1,0 +1,6 @@
+#docker run --name postgres -e POSTGRES_PASSWORD=password -d -p 5432:5432 postgres
+#docker run --name pgadmin -p 15432:80 -e "PGADMIN_DEFAULT_EMAIL=email@test.com" -e "PGADMIN_DEFAULT_PASSWORD=password" -d dpage/pgadmin4
+
+
+docker run --name pgadmin -p 15432:80 -e "PGADMIN_DEFAULT_EMAIL=email@test.com" -e "PGADMIN_DEFAULT_PASSWORD=password" -d dpage/pgadmin4
+docker run --name typefaceDb -e POSTGRES_PASSWORD=password -d -p 5432:5432 postgres
